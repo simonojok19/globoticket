@@ -44,13 +44,55 @@ const TicketPurchase = ({route, navigation}) => {
 };
 
 const styles = StyleSheet.create({
-  container: {},
-  title: {},
-  image: {},
-  shortdescription: {},
-  description: {},
-  input: {},
-  price: {},
+  container: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    paddingTop: 10,
+  },
+  purchaserow: {
+    flexDirection: 'row',
+  },
+  button: {
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    width: '60%',
+  },
+  title: {
+    fontFamily: 'Ubuntu-Regular',
+    paddingBottom: 10,
+  },
+  image: {
+    width: '100%',
+    height: 180,
+  },
+  shortdescription: {
+    fontFamily: 'Ubuntu-Regular',
+    paddingTop: 5,
+    textAlignVertical: 'center',
+  },
+  description: {
+    textAlign: 'left',
+    fontFamily: 'Ubuntu-Light',
+    fontWeight: '600',
+    padding: 10,
+  },
+  input: {
+    borderWidth: 1,
+    fontFamily: 'Ubuntu-Regular',
+    height: 38,
+    width: 40,
+    marginLeft: 25,
+  },
+  price: {
+    fontFamily: 'Ubuntu-Regular',
+    paddingTop: 5,
+    paddingBottom: 10,
+  },
+  buttontext: {
+    fontFamily: 'Ubuntu-Regular',
+    textAlign: 'center',
+    padding: 5,
+  },
 });
 
 export default TicketPurchase;
