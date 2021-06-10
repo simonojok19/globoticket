@@ -7,7 +7,7 @@ const Tickets = () => {
     return (
       <View style={styles.tickets}>
         <View>
-          <Image source={item.image} />
+          <Image source={item.image} style={styles.image} />
         </View>
         <View>
           <Text style={styles.tickettitle}>{item.event}</Text>
@@ -39,9 +39,40 @@ const Tickets = () => {
 
 // eslint-disable-next-line no-undef
 const styles = StyleSheet.create({
-  tickets: {},
-  tickettitle: {},
-  ticketshortdescription: {},
-  ticketdescription: {},
-  container: {},
+  container: {
+    paddingTop: 15,
+    paddingBottom: 15,
+  },
+  tickets: {
+    flexDirection: 'column',
+  },
+  image: {
+    height: 180,
+    width: '100%',
+  },
+  tickettitle: {
+    fontFamily: 'Ubuntu-Regular',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  ticketshortdescription: {
+    fontFamily: 'Ubuntu-Light',
+    fontWeight: '600',
+    textAlign: 'center',
+    paddingTop: 5,
+  },
+  ticketdescription: {
+    fontFamily: 'Ubuntu-Light',
+    fontWeight: '600',
+    padding: 15,
+  },
+  ticketbutton: {
+    fontFamily: 'Ubuntu-Regular',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    paddingBottom: 15,
+    paddingTop: 5,
+  },
 });
+
+export default Tickets;
