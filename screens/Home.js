@@ -8,7 +8,7 @@ const Home = props => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('./images/_Export_globoticket-bug-black.png')}
+        source={require('../images/_Export_globoticket-bug-black.png')}
         style={styles.globologo}
       />
       <Text style={styles.title}>Welcome TO GloboTicket</Text>
