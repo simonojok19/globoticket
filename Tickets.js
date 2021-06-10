@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, Image, Text, View} from 'react-native';
+import {FlatList, Image, Text, View, StyleSheet} from 'react-native';
 import globoTickets from './TicketsDB';
 
 const Tickets = () => {
@@ -37,7 +37,6 @@ const Tickets = () => {
   );
 };
 
-// eslint-disable-next-line no-undef
 const styles = StyleSheet.create({
   container: {
     paddingTop: 15,
