@@ -21,7 +21,14 @@ const App = () => {
             }}>
             {props => <Home {...props} username="Sports Fan" />}
           </Stack.Screen>
-          <Stack.Screen name="Tickets" component={Tickets} />
+          <Stack.Screen
+            name="Tickets"
+            component={Tickets}
+            options={{
+              headerTitleAlign: 'center',
+              headerTitleStyle: {fontFamily: 'Ubuntu-Regular'},
+            }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </>
