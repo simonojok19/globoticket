@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {StatusBar} from 'react-native';
-import Home from './screens/Home';
+import Home from './Home';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Tickets from './Tickets';
