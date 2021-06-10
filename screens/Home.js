@@ -16,7 +16,7 @@ const Home = props => {
       <View style={styles.textcontainer}>
         <Text style={styles.content}>{introText}</Text>
       </View>
-  </View>
+    </View>
   );
 };
 const styles = StyleSheet.create({
