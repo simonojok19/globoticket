@@ -15,11 +15,11 @@ const App = () => {
         <Stack.Navigator initialRouteName="Home" headerMode="screen">
           <Stack.Screen
             name="Home"
-            component={Home}
             options={{
               headerShown: false,
-            }}
-          />
+            }}>
+            {props => <Home {...props} username="Sports Fan" />}
+          </Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     </>
