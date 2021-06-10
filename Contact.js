@@ -61,10 +61,7 @@ const styles = StyleSheet.create({
     padding: 18,
   },
   labels: {
-    borderWidth: 1,
     fontFamily: 'Ubuntu-Regular',
-    width: '80%',
-    paddingBottom: 15,
   },
   multitxtinput: {
     borderWidth: 1,
@@ -74,7 +71,10 @@ const styles = StyleSheet.create({
     marginBottom: 50,
   },
   txtinput: {
+    borderWidth: 1,
     fontFamily: 'Ubuntu-Regular',
+    width: '80%',
+    paddingBottom: 15,
   },
 });
 
