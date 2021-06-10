@@ -6,6 +6,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Tickets from './Tickets';
 import Contact from './Contact';
+import TicketPurchase from './TicketPurchase';
 
 const Stack = createStackNavigator();
 
@@ -39,6 +40,17 @@ const App = () => {
                 fontFamily: 'Ubuntu-Regular',
               },
               headerTitle: 'Contact Us',
+            }}
+          />
+          <Stack.Screen
+            name="Purchase"
+            component={TicketPurchase}
+            options={{
+              headerTitleAlign: 'center',
+              headerTitleStyle: {
+                fontFamily: 'Ubuntu-Regular',
+              },
+              headerTitle: 'Purchase Tickets',
             }}
           />
         </Stack.Navigator>
