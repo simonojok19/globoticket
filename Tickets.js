@@ -1,5 +1,12 @@
 import React from 'react';
-import { FlatList, Image, Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import {
+  FlatList,
+  Image,
+  Text,
+  View,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
 import globoTickets from './TicketsDB';
 
 const Tickets = ({navigation}) => {
@@ -22,7 +29,9 @@ const Tickets = ({navigation}) => {
           </Text>
           <Text style={styles.ticketshortdescription}>Price: {item.price}</Text>
           <TouchableOpacity
-            onPress={() => navigation.navigate('Purchase', {tickId: item.tickId})}
+            onPress={() =>
+              navigation.navigate('Purchase', {eventId: item.eventId})
+            }
             style={styles.button}>
             <Text style={styles.ticketbutton}>Get Tickets</Text>
           </TouchableOpacity>

@@ -12,8 +12,8 @@ import {
 
 const TicketPurchase = ({route, navigation}) => {
   const [quantity, setQuantity] = useState('1');
-  const {tickId} = route.params;
-  const event = globoTickets.find(tickets => tickets.eventId === tickId);
+  const {eventId} = route.params;
+  const event = globoTickets.find(tickets => tickets.eventId === eventId);
   const purchase = () => {
     var price = event.price * quantity;
     Alert.alert(`You cost is ${price}`);
@@ -21,7 +21,7 @@ const TicketPurchase = ({route, navigation}) => {
   };
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{event.event}</Text>
+      <Text style={styles.title}>event.event</Text>
       <Image source={event.image} style={styles.image} />
       <Text style={styles.shortdescription}>{event.shortDescription}</Text>
       <Text style={styles.description}>{event.description}</Text>
