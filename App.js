@@ -1,6 +1,6 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
-import Home from './screens/Home';
+import Home from './Home';
 
 const App = () => {
   return (
