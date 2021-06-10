@@ -55,8 +55,20 @@ const News = () => {
 };
 
 const styles = StyleSheet.create({
-  storylist: {},
-  thumb: {},
-  storytext: {},
-  container: {},
+  storylist: {
+    paddingBottom: 20,
+  },
+  thumb: {
+    height: 100,
+    width: '100%',
+  },
+  storytext: {
+    padding: 10,
+  },
+  container: {
+    paddingTop: 20,
+  },
 });
+
+export default News;
+
